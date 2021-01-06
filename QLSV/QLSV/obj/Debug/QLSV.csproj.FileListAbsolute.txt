@@ -69,3 +69,14 @@ D:\LaptopOfFolder\Desktop\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.Core
 D:\LaptopOfFolder\Desktop\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.CopyComplete
 D:\LaptopOfFolder\Desktop\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 D:\LaptopOfFolder\Desktop\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csprojAssemblyReference.cache
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.ResolveComReference.cache
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLogin.resources
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmMain.resources
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLGiangVien.resources
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.Properties.Resources.resources
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
+D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
