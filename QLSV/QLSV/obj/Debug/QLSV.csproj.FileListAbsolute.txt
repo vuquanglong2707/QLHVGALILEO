@@ -80,3 +80,15 @@ D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
 D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
 D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 D:\Downloads\DOANNETD13HTTMDT1\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.ResolveComReference.cache
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLogin.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmMain.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLGiangVien.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Khoa.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Properties.Resources.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
