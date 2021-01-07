@@ -72,12 +72,6 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQLGiangVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmQLGiangVien.designer.cs">
-      <DependentUpon>FrmQLGiangVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Khoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,9 +90,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmQLGiangVien.resx">
-      <DependentUpon>FrmQLGiangVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa.resx">
       <DependentUpon>Khoa.cs</DependentUpon>
