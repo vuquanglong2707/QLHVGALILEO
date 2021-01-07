@@ -103,3 +103,14 @@ C:\Users\nguyenhiep\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.lice
 C:\Users\nguyenhiep\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
 C:\Users\nguyenhiep\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 C:\Users\nguyenhiep\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csprojAssemblyReference.cache
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.ResolveComReference.cache
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLogin.resources
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmMain.resources
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Khoa.resources
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Properties.Resources.resources
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
+C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
