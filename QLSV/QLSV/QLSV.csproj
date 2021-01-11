@@ -82,6 +82,10 @@
     <Compile Include="FrmQLDiem.designer.cs">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmXemDiem.cs" />
+    <Compile Include="FrmXemDiem.designer.cs">
+      <DependentUpon>FrmXemDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLDiem.resx">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemDiem.resx">
+      <DependentUpon>FrmXemDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa.resx">
       <DependentUpon>Khoa.cs</DependentUpon>
