@@ -126,3 +126,16 @@ C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csprojAssemblyReference.cache
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.ResolveComReference.cache
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLogin.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmMain.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmNhapDiemRL.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLDiem.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Khoa.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.Properties.Resources.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.GenerateResource.cache
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb

@@ -78,6 +78,10 @@
     <Compile Include="FrmNhapDiemRL.designer.cs">
       <DependentUpon>FrmNhapDiemRL.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQLDiem.cs" />
+    <Compile Include="FrmQLDiem.designer.cs">
+      <DependentUpon>FrmQLDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNhapDiemRL.resx">
       <DependentUpon>FrmNhapDiemRL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQLDiem.resx">
+      <DependentUpon>FrmQLDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa.resx">
       <DependentUpon>Khoa.cs</DependentUpon>
