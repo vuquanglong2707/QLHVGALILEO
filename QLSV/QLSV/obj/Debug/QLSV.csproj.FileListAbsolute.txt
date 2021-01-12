@@ -140,3 +140,7 @@ D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.
 D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
 D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmXemDiem.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmNhapDiemRL.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLDiem.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmXemDiem.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoSinhVien.resources
