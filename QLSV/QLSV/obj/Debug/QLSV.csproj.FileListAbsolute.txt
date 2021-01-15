@@ -160,3 +160,4 @@ C:\Users\PV\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe.licenses
 C:\Users\PV\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
 C:\Users\PV\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.exe
 C:\Users\PV\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.pdb
+C:\Users\PV\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmXemDiemRL.resources
