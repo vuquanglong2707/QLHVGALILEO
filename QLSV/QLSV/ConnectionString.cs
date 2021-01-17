@@ -8,6 +8,6 @@ namespace BaiTapLonN6
 {
     public class ConnectionString
     {
-        public static String connectionString = @"Data Source=DESKTOP-90BPMDF;Initial Catalog=QLSV;User ID=sa;Password=123456;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static String connectionString = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True";
     }
 }

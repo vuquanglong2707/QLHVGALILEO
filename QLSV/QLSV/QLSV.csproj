@@ -82,12 +82,6 @@
     <Compile Include="FrmQLDiem.designer.cs">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmREGISTER.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmREGISTER.designer.cs">
-      <DependentUpon>FrmREGISTER.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmSinhVienDangKyHoc.cs" />
     <Compile Include="FrmSinhVienDangKyHoc.Designer.cs">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
@@ -126,9 +120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLDiem.resx">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmREGISTER.resx">
-      <DependentUpon>FrmREGISTER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSinhVienDangKyHoc.resx">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
