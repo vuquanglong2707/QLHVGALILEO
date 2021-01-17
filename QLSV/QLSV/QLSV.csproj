@@ -78,7 +78,9 @@
     <Compile Include="FrmNhapDiemRL.designer.cs">
       <DependentUpon>FrmNhapDiemRL.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmQLDiem.cs" />
+    <Compile Include="FrmQLDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmQLDiem.designer.cs">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
     </Compile>
@@ -88,11 +90,15 @@
     <Compile Include="FrmREGISTER.designer.cs">
       <DependentUpon>FrmREGISTER.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSinhVienDangKyHoc.cs" />
+    <Compile Include="FrmSinhVienDangKyHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmSinhVienDangKyHoc.Designer.cs">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmXemDiem.cs" />
+    <Compile Include="FrmXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmXemDiem.designer.cs">
       <DependentUpon>FrmXemDiem.cs</DependentUpon>
     </Compile>
@@ -101,6 +107,12 @@
     </Compile>
     <Compile Include="HoSoSinhVien.designer.cs">
       <DependentUpon>HoSoSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoSoTamTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoSoTamTru.designer.cs">
+      <DependentUpon>HoSoTamTru.cs</DependentUpon>
     </Compile>
     <Compile Include="Khoa.cs">
       <SubType>Form</SubType>
@@ -138,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoSoSinhVien.resx">
       <DependentUpon>HoSoSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoSoTamTru.resx">
+      <DependentUpon>HoSoTamTru.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa.resx">
       <DependentUpon>Khoa.cs</DependentUpon>
