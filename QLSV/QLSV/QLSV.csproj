@@ -96,6 +96,12 @@
     <Compile Include="FrmSinhVienDangKyHoc.Designer.cs">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmThemSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThemSV.designer.cs">
+      <DependentUpon>FrmThemSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmXemDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ThemTamTru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemTamTru.designer.cs">
+      <DependentUpon>ThemTamTru.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +157,9 @@
     <EmbeddedResource Include="FrmSinhVienDangKyHoc.resx">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmThemSV.resx">
+      <DependentUpon>FrmThemSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmXemDiem.resx">
       <DependentUpon>FrmXemDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemTamTru.resx">
+      <DependentUpon>ThemTamTru.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
