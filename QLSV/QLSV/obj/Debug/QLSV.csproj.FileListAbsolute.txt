@@ -170,3 +170,8 @@ C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoTamTru.resources
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThemTamTru.resources
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmThemSV.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLoad.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmSinhVienDangKyHoc.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmThemSV.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoTamTru.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThemTamTru.resources
