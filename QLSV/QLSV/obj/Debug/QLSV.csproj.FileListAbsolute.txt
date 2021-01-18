@@ -169,3 +169,4 @@ C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoSinhVien.resources
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoTamTru.resources
 C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThemTamTru.resources
+C:\Users\Trai Dep Ban Phukien\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmThemSV.resources
