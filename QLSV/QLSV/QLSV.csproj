@@ -81,6 +81,12 @@
   <ItemGroup>
     <Compile Include="ConnectionString.cs" />
     <Compile Include="DevExpress\XtraEditors\SimpleButton.cs" />
+    <Compile Include="FrmDiaDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiaDanh.designer.cs">
+      <DependentUpon>FrmDiaDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGiangVienNhapDiemMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <Compile Include="ThemTamTru.designer.cs">
       <DependentUpon>ThemTamTru.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmDiaDanh.resx">
+      <DependentUpon>FrmDiaDanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGiangVienNhapDiemMonHoc.resx">
       <DependentUpon>FrmGiangVienNhapDiemMonHoc.cs</DependentUpon>
     </EmbeddedResource>
