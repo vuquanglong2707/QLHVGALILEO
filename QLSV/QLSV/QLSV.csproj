@@ -178,6 +178,12 @@
     <Compile Include="ThemTamTru.designer.cs">
       <DependentUpon>ThemTamTru.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmDiaDanh.resx">
       <DependentUpon>FrmDiaDanh.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemTamTru.resx">
       <DependentUpon>ThemTamTru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
