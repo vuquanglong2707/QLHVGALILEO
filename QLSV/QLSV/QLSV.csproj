@@ -123,6 +123,12 @@
     <Compile Include="FrmQLDiem.designer.cs">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmQLTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQLTaiKhoan.designer.cs">
+      <DependentUpon>FrmQLTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmREGISTER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLDiem.resx">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQLTaiKhoan.resx">
+      <DependentUpon>FrmQLTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmREGISTER.resx">
       <DependentUpon>FrmREGISTER.cs</DependentUpon>
