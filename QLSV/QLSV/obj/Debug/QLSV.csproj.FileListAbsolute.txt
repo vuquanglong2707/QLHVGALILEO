@@ -199,3 +199,4 @@ C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThemTamTru.re
 C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThongKe.resources
 C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLTaiKhoan.resources
 C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThongKe.resources
+C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmTaoLopDangKyHoc.resources
