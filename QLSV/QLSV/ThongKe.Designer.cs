@@ -66,10 +66,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(510, 27);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(680, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "LỚP :";
             // 
@@ -78,10 +77,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(6, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(8, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "KHOA :";
             // 
@@ -90,10 +88,9 @@
             this.cbboxlop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbboxlop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbboxlop.FormattingEnabled = true;
-            this.cbboxlop.Location = new System.Drawing.Point(544, 24);
-            this.cbboxlop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbboxlop.Location = new System.Drawing.Point(725, 30);
             this.cbboxlop.Name = "cbboxlop";
-            this.cbboxlop.Size = new System.Drawing.Size(176, 21);
+            this.cbboxlop.Size = new System.Drawing.Size(234, 24);
             this.cbboxlop.TabIndex = 2;
             // 
             // cbboxkhoa
@@ -101,21 +98,19 @@
             this.cbboxkhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbboxkhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbboxkhoa.FormattingEnabled = true;
-            this.cbboxkhoa.Location = new System.Drawing.Point(52, 22);
-            this.cbboxkhoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbboxkhoa.Location = new System.Drawing.Point(69, 27);
             this.cbboxkhoa.Name = "cbboxkhoa";
-            this.cbboxkhoa.Size = new System.Drawing.Size(176, 21);
+            this.cbboxkhoa.Size = new System.Drawing.Size(233, 24);
             this.cbboxkhoa.TabIndex = 1;
             this.cbboxkhoa.SelectedIndexChanged += new System.EventHandler(this.cbboxkhoa_SelectedIndexChanged);
             // 
             // txtTongSo
             // 
             this.txtTongSo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTongSo.Location = new System.Drawing.Point(455, 39);
-            this.txtTongSo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTongSo.Location = new System.Drawing.Point(607, 48);
             this.txtTongSo.Name = "txtTongSo";
             this.txtTongSo.ReadOnly = true;
-            this.txtTongSo.Size = new System.Drawing.Size(38, 20);
+            this.txtTongSo.Size = new System.Drawing.Size(49, 22);
             this.txtTongSo.TabIndex = 17;
             // 
             // label3
@@ -123,10 +118,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(396, 41);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(528, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = "TỔNG SV :";
             // 
@@ -135,10 +129,9 @@
             this.radiotatcalop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiotatcalop.AutoSize = true;
             this.radiotatcalop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiotatcalop.Location = new System.Drawing.Point(498, 59);
-            this.radiotatcalop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiotatcalop.Location = new System.Drawing.Point(664, 73);
             this.radiotatcalop.Name = "radiotatcalop";
-            this.radiotatcalop.Size = new System.Drawing.Size(57, 17);
+            this.radiotatcalop.Size = new System.Drawing.Size(71, 21);
             this.radiotatcalop.TabIndex = 13;
             this.radiotatcalop.TabStop = true;
             this.radiotatcalop.Text = "Tất Cả";
@@ -149,10 +142,9 @@
             this.radiodatotnghiep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiodatotnghiep.AutoSize = true;
             this.radiodatotnghiep.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiodatotnghiep.Location = new System.Drawing.Point(628, 59);
-            this.radiodatotnghiep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiodatotnghiep.Location = new System.Drawing.Point(838, 73);
             this.radiodatotnghiep.Name = "radiodatotnghiep";
-            this.radiodatotnghiep.Size = new System.Drawing.Size(95, 17);
+            this.radiodatotnghiep.Size = new System.Drawing.Size(121, 21);
             this.radiodatotnghiep.TabIndex = 12;
             this.radiodatotnghiep.TabStop = true;
             this.radiodatotnghiep.Text = "Đã Tốt Nghiệp";
@@ -163,10 +155,9 @@
             this.radiodanghoclop.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiodanghoclop.AutoSize = true;
             this.radiodanghoclop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiodanghoclop.Location = new System.Drawing.Point(556, 59);
-            this.radiodanghoclop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiodanghoclop.Location = new System.Drawing.Point(741, 73);
             this.radiodanghoclop.Name = "radiodanghoclop";
-            this.radiodanghoclop.Size = new System.Drawing.Size(74, 17);
+            this.radiodanghoclop.Size = new System.Drawing.Size(92, 21);
             this.radiodanghoclop.TabIndex = 11;
             this.radiodanghoclop.TabStop = true;
             this.radiodanghoclop.Text = "Đang Học";
@@ -177,10 +168,9 @@
             this.radiotatca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiotatca.AutoSize = true;
             this.radiotatca.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiotatca.Location = new System.Drawing.Point(20, 59);
-            this.radiotatca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiotatca.Location = new System.Drawing.Point(27, 73);
             this.radiotatca.Name = "radiotatca";
-            this.radiotatca.Size = new System.Drawing.Size(57, 17);
+            this.radiotatca.Size = new System.Drawing.Size(71, 21);
             this.radiotatca.TabIndex = 10;
             this.radiotatca.TabStop = true;
             this.radiotatca.Text = "Tất Cả";
@@ -191,10 +181,9 @@
             this.radiototnghiep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiototnghiep.AutoSize = true;
             this.radiototnghiep.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiototnghiep.Location = new System.Drawing.Point(152, 59);
-            this.radiototnghiep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiototnghiep.Location = new System.Drawing.Point(202, 73);
             this.radiototnghiep.Name = "radiototnghiep";
-            this.radiototnghiep.Size = new System.Drawing.Size(95, 17);
+            this.radiototnghiep.Size = new System.Drawing.Size(121, 21);
             this.radiototnghiep.TabIndex = 9;
             this.radiototnghiep.TabStop = true;
             this.radiototnghiep.Text = "Đã Tốt Nghiệp";
@@ -205,10 +194,9 @@
             this.radiodanghoc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radiodanghoc.AutoSize = true;
             this.radiodanghoc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radiodanghoc.Location = new System.Drawing.Point(78, 59);
-            this.radiodanghoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radiodanghoc.Location = new System.Drawing.Point(104, 73);
             this.radiodanghoc.Name = "radiodanghoc";
-            this.radiodanghoc.Size = new System.Drawing.Size(74, 17);
+            this.radiodanghoc.Size = new System.Drawing.Size(92, 21);
             this.radiodanghoc.TabIndex = 8;
             this.radiodanghoc.TabStop = true;
             this.radiodanghoc.Text = "Đang Học";
@@ -221,10 +209,9 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Image = global::BaiTapLonN6.Properties.Resources.icons8_estimate_30;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(736, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(981, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 52);
+            this.button1.Size = new System.Drawing.Size(138, 64);
             this.button1.TabIndex = 14;
             this.button1.Text = "      THỐNG KÊ";
             this.button1.UseVisualStyleBackColor = true;
@@ -237,10 +224,9 @@
             this.btnThongKeSV.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnThongKeSV.Image = global::BaiTapLonN6.Properties.Resources.icons8_estimate_30;
             this.btnThongKeSV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeSV.Location = new System.Drawing.Point(256, 22);
-            this.btnThongKeSV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThongKeSV.Location = new System.Drawing.Point(342, 27);
             this.btnThongKeSV.Name = "btnThongKeSV";
-            this.btnThongKeSV.Size = new System.Drawing.Size(101, 52);
+            this.btnThongKeSV.Size = new System.Drawing.Size(135, 64);
             this.btnThongKeSV.TabIndex = 3;
             this.btnThongKeSV.Text = "      THỐNG KÊ";
             this.btnThongKeSV.UseVisualStyleBackColor = true;
@@ -268,15 +254,13 @@
             this.Ngaysinh,
             this.tinhtrang});
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 117);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 144);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1314, 552);
+            this.dataGridView1.Size = new System.Drawing.Size(1752, 679);
             this.dataGridView1.TabIndex = 15;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridView1_DataBindingComplete);
             // 
             // MSV
@@ -311,10 +295,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::BaiTapLonN6.Properties.Resources.icons8_user_301;
-            this.pictureBox1.Location = new System.Drawing.Point(362, 33);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(482, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -337,11 +320,9 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtTongSo);
             this.groupBox1.Controls.Add(this.radiotatca);
-            this.groupBox1.Location = new System.Drawing.Point(52, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(852, 94);
+            this.groupBox1.Size = new System.Drawing.Size(1136, 116);
             this.groupBox1.TabIndex = 106;
             this.groupBox1.TabStop = false;
             // 
@@ -349,10 +330,9 @@
             // 
             this.btnChonDuongDan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChonDuongDan.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnChonDuongDan.Location = new System.Drawing.Point(14, 29);
-            this.btnChonDuongDan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChonDuongDan.Location = new System.Drawing.Point(18, 36);
             this.btnChonDuongDan.Name = "btnChonDuongDan";
-            this.btnChonDuongDan.Size = new System.Drawing.Size(127, 24);
+            this.btnChonDuongDan.Size = new System.Drawing.Size(169, 30);
             this.btnChonDuongDan.TabIndex = 102;
             this.btnChonDuongDan.Text = "Chọn Đường Dẫn";
             this.btnChonDuongDan.UseVisualStyleBackColor = true;
@@ -362,10 +342,9 @@
             // 
             this.lblDuongDan.AutoSize = true;
             this.lblDuongDan.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblDuongDan.Location = new System.Drawing.Point(28, 64);
-            this.lblDuongDan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDuongDan.Location = new System.Drawing.Point(37, 79);
             this.lblDuongDan.Name = "lblDuongDan";
-            this.lblDuongDan.Size = new System.Drawing.Size(19, 13);
+            this.lblDuongDan.Size = new System.Drawing.Size(24, 17);
             this.lblDuongDan.TabIndex = 103;
             this.lblDuongDan.Text = "=>";
             // 
@@ -374,10 +353,9 @@
             this.btnXuatExel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnXuatExel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXuatExel.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnXuatExel.Location = new System.Drawing.Point(150, 17);
-            this.btnXuatExel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuatExel.Location = new System.Drawing.Point(200, 21);
             this.btnXuatExel.Name = "btnXuatExel";
-            this.btnXuatExel.Size = new System.Drawing.Size(152, 37);
+            this.btnXuatExel.Size = new System.Drawing.Size(202, 45);
             this.btnXuatExel.TabIndex = 19;
             this.btnXuatExel.Text = "XUẤT EXCEL";
             this.btnXuatExel.UseVisualStyleBackColor = true;
@@ -387,10 +365,9 @@
             // 
             this.lblDuongDanFile.AutoSize = true;
             this.lblDuongDanFile.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.lblDuongDanFile.Location = new System.Drawing.Point(50, 64);
-            this.lblDuongDanFile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDuongDanFile.Location = new System.Drawing.Point(67, 79);
             this.lblDuongDanFile.Name = "lblDuongDanFile";
-            this.lblDuongDanFile.Size = new System.Drawing.Size(0, 13);
+            this.lblDuongDanFile.Size = new System.Drawing.Size(0, 17);
             this.lblDuongDanFile.TabIndex = 104;
             // 
             // groupBox2
@@ -400,26 +377,23 @@
             this.groupBox2.Controls.Add(this.btnXuatExel);
             this.groupBox2.Controls.Add(this.lblDuongDan);
             this.groupBox2.Controls.Add(this.btnChonDuongDan);
-            this.groupBox2.Location = new System.Drawing.Point(908, 10);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(1163, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(316, 94);
+            this.groupBox2.Size = new System.Drawing.Size(421, 116);
             this.groupBox2.TabIndex = 105;
             this.groupBox2.TabStop = false;
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1113, 640);
+            this.ClientSize = new System.Drawing.Size(1610, 835);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ThongKe";
             this.Text = "Thống Kê Báo Cáo";
             this.Load += new System.EventHandler(this.ThongKe_Load);
