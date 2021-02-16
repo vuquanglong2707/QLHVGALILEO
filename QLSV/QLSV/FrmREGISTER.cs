@@ -38,7 +38,7 @@ namespace BaiTapLonN6
             }
             return str;
         }
-        private void changepassword(String user, String pass)
+        private void changepassword(String user,String pass)
         {
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
             {
@@ -56,16 +56,15 @@ namespace BaiTapLonN6
 
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
-            Admin a = new Admin();
-            if (txtMatKhauCu.Text == "" || txtmatkhaumoi.Text == "" || txtNhapLaiMKmoi.Text == "")
+            Admin a= new Admin();
+            if(txtMatKhauCu.Text=="" || txtmatkhaumoi.Text=="" || txtNhapLaiMKmoi.Text=="")
             {
                 MessageBox.Show("Hãy Nhập Đầy Đủ");
             }
             else
             {
-                if (a.checklog(_name, GetMD5(txtMatKhauCu.Text)) == true)
-                {
-                    if (txtmatkhaumoi.Text == txtNhapLaiMKmoi.Text)
+                if(a.checklog(_name,GetMD5(txtMatKhauCu.Text))==true) {
+                    if(txtmatkhaumoi.Text==txtNhapLaiMKmoi.Text)
                     {
                         changepassword(_name, GetMD5(txtmatkhaumoi.Text));
                         MessageBox.Show("Đổi Mật Khẩu Thành Công");

@@ -17,7 +17,7 @@ namespace BaiTapLonN6
             InitializeComponent();
         }
         static String trangthai = "";
-        static String Lop = "";
+        static String Lop= "";
         static String khoa = "";
 
         private void FrmQLTaiKhoan_Load(object sender, EventArgs e)
@@ -58,36 +58,36 @@ namespace BaiTapLonN6
 
         private void cbboxkhoa_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cbboxlop_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cbboxHoten_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btncapnhattaikhoan_Click(object sender, EventArgs e)
         {
             Admin a = new Admin();
-            if (cbboxloaitaikhoan.Text == "")
+            if(cbboxloaitaikhoan.Text=="")
             {
                 MessageBox.Show("Hãy Chọn Loại Tài Khoản Hiển Thị");
             }
             else
             {
                 dataGridView1.DataSource = a.taikhoan(cbboxloaitaikhoan.Text);
-
+                
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
                     dataGridView1[5, i] = linkCell;
                 }
-
+                
             }
         }
 
@@ -128,14 +128,14 @@ namespace BaiTapLonN6
 
         private void btThemTKSV_Click(object sender, EventArgs e)
         {
-            if (txtMSV.Text == "")
+            if (txtMSV.Text=="")
             {
                 MessageBox.Show("Vui lòng Chọn SV,điền đầy đủ User và Pass/Nhập Lại Pass");
             }
             else
             {
 
-                if (txtMKSV.Text == txtReMKSV.Text)
+                if (txtMKSV.Text==txtReMKSV.Text)
                 {
                     GiangVien b = new GiangVien();
                     Admin a = new Admin();
@@ -144,7 +144,7 @@ namespace BaiTapLonN6
                         a.addadmin(txtHoTenSV.Text, txtMSV.Text, GetMD5(txtMKSV.Text), "Sinh Viên");
                         MessageBox.Show("Tạo Tài Khoản Thành Công");
                         dataGridView1.DataSource = a.taikhoan("Sinh Viên");
-                        if (trangthai == "Sinh Viên")
+                        if(trangthai=="Sinh Viên")
                         {
                             dataGridView2.DataSource = b.DanhSachTatCaSVThemTaiKhoan(Lop);
                             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -154,7 +154,7 @@ namespace BaiTapLonN6
                             }
 
                         }
-                        else if (trangthai == "Giảng Viên")
+                        else if(trangthai=="Giảng Viên")
                         {
                             dataGridView2.DataSource = b.DanhSachTatCaGVThemTaiKhoan(khoa);
                             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -204,18 +204,18 @@ namespace BaiTapLonN6
                         }
                     }
                 }
-
+         
             }
         }
 
         private void cbboxKhoaGV_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void cbboxHotenGV_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnThemTKGV_Click(object sender, EventArgs e)
@@ -289,9 +289,9 @@ namespace BaiTapLonN6
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             GiangVien a = new GiangVien();
-            if (radioButtonSinhVien.Checked)
+            if(radioButtonSinhVien.Checked)
             {
-                if (cbboxLocLop.Text == "")
+                if(cbboxLocLop.Text=="")
                 {
                     MessageBox.Show("Vui lòng chọn lớp để lọc sinh viên");
                 }
@@ -302,7 +302,7 @@ namespace BaiTapLonN6
                     Lop = cbboxLocLop.SelectedValue.ToString();
                 }
             }
-            else if (radioButtonGV.Checked)
+            else if(radioButtonGV.Checked)
             {
                 dataGridView2.DataSource = a.DanhSachTatCaGVThemTaiKhoan(cbboxLocKhoa.SelectedValue.ToString());
                 trangthai = "Giảng Viên";
@@ -316,18 +316,18 @@ namespace BaiTapLonN6
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView2.Rows.Count == 0)
+            if(dataGridView2.Rows.Count==0)
             {
 
             }
             else
             {
-                if (trangthai == "Sinh Viên")
+                if(trangthai=="Sinh Viên")
                 {
                     txtMSV.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
                     txtHoTenSV.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();
                 }
-                else if (trangthai == "Giảng Viên")
+                else if(trangthai=="Giảng Viên")
                 {
                     txtMGV.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
                     txtHoTenGV.Text = dataGridView2.CurrentRow.Cells[1].Value.ToString();

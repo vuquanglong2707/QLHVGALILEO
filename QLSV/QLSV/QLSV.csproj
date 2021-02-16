@@ -33,41 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CairoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.10\lib\netstandard2.0\CairoSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.10\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.Data.20.2.4\lib\net452\DevExpress.Data.v20.2.dll</HintPath>
-    </Reference>
-    <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.10\lib\netstandard2.0\GLibSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <HintPath>..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
-    </Reference>
-    <Reference Include="PangoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.10\lib\netstandard2.0\PangoSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
-    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,24 +59,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
     <Compile Include="ConnectionString.cs" />
-    <Compile Include="DevExpress\XtraEditors\SimpleButton.cs" />
     <Compile Include="FrmDiaDanh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmDiaDanh.designer.cs">
+    <Compile Include="FrmDiaDanh.Designer.cs">
       <DependentUpon>FrmDiaDanh.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGiangVienNhapDiemMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGiangVienNhapDiemMonHoc.designer.cs">
+    <Compile Include="FrmGiangVienNhapDiemMonHoc.Designer.cs">
       <DependentUpon>FrmGiangVienNhapDiemMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLoad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLoad.designer.cs">
+    <Compile Include="FrmLoad.Designer.cs">
       <DependentUpon>FrmLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
@@ -105,34 +85,52 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLop.Designer.cs">
+      <DependentUpon>FrmLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonHoc.Designer.cs">
+      <DependentUpon>FrmMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNhapDiemRL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmNhapDiemRL.designer.cs">
+    <Compile Include="FrmNhapDiemRL.Designer.cs">
       <DependentUpon>FrmNhapDiemRL.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQLDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQLDiem.designer.cs">
+    <Compile Include="FrmQLDiem.Designer.cs">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQLGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQLGiangVien.Designer.cs">
+      <DependentUpon>FrmQLGiangVien.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmQLTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmQLTaiKhoan.designer.cs">
+    <Compile Include="FrmQLTaiKhoan.Designer.cs">
       <DependentUpon>FrmQLTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmREGISTER.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmREGISTER.designer.cs">
+    <Compile Include="FrmREGISTER.Designer.cs">
       <DependentUpon>FrmREGISTER.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSinhVienDangKyHoc.cs">
@@ -141,40 +139,64 @@
     <Compile Include="FrmSinhVienDangKyHoc.Designer.cs">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSuaDiemRL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuaDiemRL.Designer.cs">
+      <DependentUpon>FrmSuaDiemRL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTaoLopDangKyHoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTaoLopDangKyHoc.designer.cs">
+    <Compile Include="FrmTaoLopDangKyHoc.Designer.cs">
       <DependentUpon>FrmTaoLopDangKyHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTBTL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTBTL.Designer.cs">
+      <DependentUpon>FrmTBTL.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmThemSV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmThemSV.designer.cs">
+    <Compile Include="FrmThemSV.Designer.cs">
       <DependentUpon>FrmThemSV.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmXemDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmXemDiem.designer.cs">
+    <Compile Include="FrmXemDiem.Designer.cs">
       <DependentUpon>FrmXemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXemDiemRL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXemDiemRL.Designer.cs">
+      <DependentUpon>FrmXemDiemRL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXetHocBong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXetHocBong.Designer.cs">
+      <DependentUpon>FrmXetHocBong.cs</DependentUpon>
     </Compile>
     <Compile Include="HoSoSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoSoSinhVien.designer.cs">
+    <Compile Include="HoSoSinhVien.Designer.cs">
       <DependentUpon>HoSoSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="HoSoTamTru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HoSoTamTru.designer.cs">
+    <Compile Include="HoSoTamTru.Designer.cs">
       <DependentUpon>HoSoTamTru.cs</DependentUpon>
     </Compile>
     <Compile Include="Khoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Khoa.designer.cs">
+    <Compile Include="Khoa.Designer.cs">
       <DependentUpon>Khoa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -184,10 +206,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ThemeColor.cs" />
     <Compile Include="ThemTamTru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThemTamTru.designer.cs">
+    <Compile Include="ThemTamTru.Designer.cs">
       <DependentUpon>ThemTamTru.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongKe.cs">
@@ -208,14 +231,23 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLop.resx">
+      <DependentUpon>FrmLop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonHoc.resx">
+      <DependentUpon>FrmMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNhapDiemRL.resx">
       <DependentUpon>FrmNhapDiemRL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLDiem.resx">
       <DependentUpon>FrmQLDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQLGiangVien.resx">
+      <DependentUpon>FrmQLGiangVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQLTaiKhoan.resx">
       <DependentUpon>FrmQLTaiKhoan.cs</DependentUpon>
@@ -226,14 +258,26 @@
     <EmbeddedResource Include="FrmSinhVienDangKyHoc.resx">
       <DependentUpon>FrmSinhVienDangKyHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuaDiemRL.resx">
+      <DependentUpon>FrmSuaDiemRL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTaoLopDangKyHoc.resx">
       <DependentUpon>FrmTaoLopDangKyHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTBTL.resx">
+      <DependentUpon>FrmTBTL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThemSV.resx">
       <DependentUpon>FrmThemSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXemDiem.resx">
       <DependentUpon>FrmXemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXemDiemRL.resx">
+      <DependentUpon>FrmXemDiemRL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXetHocBong.resx">
+      <DependentUpon>FrmXetHocBong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoSoSinhVien.resx">
       <DependentUpon>HoSoSinhVien.cs</DependentUpon>
@@ -403,6 +447,15 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>1</VersionMajor>

@@ -23,7 +23,7 @@ namespace BaiTapLonN6
         private void FrmXemDiem_Load(object sender, EventArgs e)
         {
             Sinhvien a = new Sinhvien();
-            lblhienthithongtinsinhvien.Text = "MSV: " + MaSinhVien + " (" + a.TenSinhVien(int.Parse(MaSinhVien)) + ")";
+            lblhienthithongtinsinhvien.Text = "MSV: " + MaSinhVien +" ("+a.TenSinhVien(int.Parse(MaSinhVien))+")";
             DiemTBTL b = new DiemTBTL();
             dataGridView2.DataSource = b.XemDiemHe4BySinhVien(MaSinhVien);
         }
@@ -31,19 +31,19 @@ namespace BaiTapLonN6
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             XemDiemSV a = new XemDiemSV();
-            if (radioButtonTatCa.Checked)
+            if(radioButtonTatCa.Checked)
             {
                 dataGridView1.DataSource = a.LoadTatCaDiemSV(MaSinhVien);
             }
-            else if (radioTheoNHHK.Checked)
+            else if(radioTheoNHHK.Checked)
             {
-                if (cbboxNamHoc.Text == "")
+                if(cbboxNamHoc.Text=="")
                 {
 
                 }
                 else
                 {
-                    dataGridView1.DataSource = a.LoadDiemSVTheoHocKy(MaSinhVien, cbboxNamHoc.Text);
+                    dataGridView1.DataSource = a.LoadDiemSVTheoHocKy(MaSinhVien,cbboxNamHoc.Text);
                 }
             }
             else

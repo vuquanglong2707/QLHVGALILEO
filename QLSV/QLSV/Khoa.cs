@@ -32,7 +32,7 @@ namespace BaiTapLonN6
             if (txtTenkhoa.Text != "")
             {
                 KhoaDT k = new KhoaDT();
-                k.Them(txtTenkhoa.Text, txtSoTien.Text);
+                k.Them(txtTenkhoa.Text,txtSoTien.Text);
                 MessageBox.Show("Thêm thành Công");
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.DataSource = k.Loadkhoa();
@@ -55,7 +55,7 @@ namespace BaiTapLonN6
                 if (thongbao == DialogResult.OK)
                 {
                     KhoaDT k = new KhoaDT();
-                    k.update(txtMakhoa1.Text, txtTenkhoa1.Text, txtSoTien2.Text);
+                    k.update(txtMakhoa1.Text, txtTenkhoa1.Text,txtSoTien2.Text);
                     MessageBox.Show("Sửa thành công");
                     txtMakhoa1.Clear();
                     txtTenkhoa1.Clear();
@@ -101,7 +101,7 @@ namespace BaiTapLonN6
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (click == true)
+            if(click == true)
             {
                 if (dataGridView1.Rows.Count == 0)
                 {
@@ -111,7 +111,7 @@ namespace BaiTapLonN6
                 {
                     txtMakhoa1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                     txtTenkhoa1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                    txtSoTien2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    txtSoTien2.Text= dataGridView1.CurrentRow.Cells[2].Value.ToString();
                 }
             }
         }
@@ -157,7 +157,7 @@ namespace BaiTapLonN6
             txtTenChuyenNganh.Clear();
         }
 
-        private void themchuyennganh(String machuyennganh, String tenchuyennganh, String makhoa)
+        private void themchuyennganh(String machuyennganh,String tenchuyennganh,String makhoa)
         {
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
             {
@@ -244,17 +244,17 @@ namespace BaiTapLonN6
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (txtTenChuyenNganh.Text != "" && txtMaChuyenNganh.Text != "")
+            if(txtTenChuyenNganh.Text!="" && txtMaChuyenNganh.Text!="")
             {
                 try
                 {
                     themchuyennganh(txtMaChuyenNganh.Text, txtTenChuyenNganh.Text, cbboxKhoa.SelectedValue.ToString());
                     MessageBox.Show("Thêm Thành Công");
                 }
-                catch (Exception ex)
+                catch(Exception ex)
                 {
                     MessageBox.Show("Trùng Mã CN");
-                }
+                } 
             }
             else
             {
@@ -269,7 +269,7 @@ namespace BaiTapLonN6
 
         private void btnCapNhatCNTheoKhoa_Click(object sender, EventArgs e)
         {
-            dataGridView2.DataSource = LoadChuyenNganhTheoKhoa(cbboxChonKhoaCapNhat.SelectedValue.ToString());
+            dataGridView2.DataSource= LoadChuyenNganhTheoKhoa(cbboxChonKhoaCapNhat.SelectedValue.ToString());
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -300,7 +300,7 @@ namespace BaiTapLonN6
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView2.Rows.Count == 0)
+            if(dataGridView2.Rows.Count==0)
             {
 
             }

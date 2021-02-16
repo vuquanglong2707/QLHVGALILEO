@@ -124,7 +124,7 @@ namespace BaiTapLonN6
                 }
             }
         }
-        private DataTable LoadSVTRONGLOP(String malophocphan, String namhoc, String mmh)
+        private DataTable LoadSVTRONGLOP(String malophocphan,String namhoc,String mmh)
         {
             DataTable data = new DataTable();
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
@@ -155,7 +155,7 @@ namespace BaiTapLonN6
                 cmd.CommandText = "NAMHOC_LOPHOCPHAN";
                 cmd.Parameters.Add(new SqlParameter("@malophocphan", malophocphan));
                 var result = cmd.ExecuteScalar();
-                if (result == null)
+                if(result==null)
                 {
 
                 }
@@ -171,20 +171,20 @@ namespace BaiTapLonN6
 
         private void btnloadsv_Click(object sender, EventArgs e)
         {
-            if (cbboxLopHocDangDay.Text == "")
+            if(cbboxLopHocDangDay.Text=="")
             {
                 MessageBox.Show("Empty :(((");
             }
             else
             {
-
+                
                 MMH = MAMONHOCTRONGLOPHOCPHAN(cbboxLopHocDangDay.SelectedValue.ToString());
                 NamHocCuaLopHocPhan = NamHoc(cbboxLopHocDangDay.SelectedValue.ToString());
-                dataGridView1.DataSource = LoadSVTRONGLOP(cbboxLopHocDangDay.SelectedValue.ToString(), NamHocCuaLopHocPhan, MMH);
+                dataGridView1.DataSource = LoadSVTRONGLOP(cbboxLopHocDangDay.SelectedValue.ToString(),NamHocCuaLopHocPhan,MMH);
             }
         }
 
-        private int SolanhocCuaSV(String msv, String mmh)
+        private int SolanhocCuaSV(String msv,String mmh)
         {
             int result = 0;
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))

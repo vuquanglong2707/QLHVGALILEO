@@ -22,7 +22,7 @@ namespace BaiTapLonN6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtHoten.Text != "" && cbboxLop.Text != "" && txtNamNhapHoc1.Text != "" && cbboxQuanHuyen.Text != "" && cbboxPhuongxa.Text != "")
+            if (txtHoten.Text != "" && cbboxLop.Text != "" && txtNamNhapHoc1.Text!="" && cbboxQuanHuyen.Text != "" && cbboxPhuongxa.Text!= "")
             {
                 Sinhvien a = new Sinhvien();
                 Lop b = new Lop();
@@ -41,10 +41,10 @@ namespace BaiTapLonN6
                         {
                             byte[] img = null;
                             FileStream fs = new System.IO.FileStream(imgLoc, System.IO.FileMode.Open, System.IO.FileAccess.Read);
-
+                            
                             BinaryReader br = new BinaryReader(fs); //Doc nhi phan
                             img = br.ReadBytes((int)fs.Length);
-                            a.addnewIMG(txtHoten.Text, dateTimePicker1.Value.ToString(), cbboxGioitinh.Text, cbboxDanToc.Text, txtSDT.Text, txtCMND.Text, txtEmail.Text, cbboxHeDT.Text, txtHotenBo.Text, txtNghebo.Text, txtHotenme.Text, txtNgheme.Text, c.Maxa(cbboxPhuongxa.Text), b.Malop(cbboxLop.Text), cbboxTinhtrang.Text, int.Parse(txtNamNhapHoc1.Text), img);
+                            a.addnewIMG(txtHoten.Text, dateTimePicker1.Value.ToString(), cbboxGioitinh.Text, cbboxDanToc.Text, txtSDT.Text, txtCMND.Text, txtEmail.Text, cbboxHeDT.Text, txtHotenBo.Text, txtNghebo.Text, txtHotenme.Text, txtNgheme.Text, c.Maxa(cbboxPhuongxa.Text), b.Malop(cbboxLop.Text), cbboxTinhtrang.Text, int.Parse(txtNamNhapHoc1.Text),img);
                             MessageBox.Show("Thêm Thành Công");
                             this.Close();
                             imgLoc = "";

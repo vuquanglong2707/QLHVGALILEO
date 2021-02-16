@@ -69,7 +69,7 @@ namespace BaiTapLonN6
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (click == true)
+            if(click==true)
             {
                 if (dataGridView1.Rows.Count == 0)
                 {
@@ -102,9 +102,9 @@ namespace BaiTapLonN6
             }
         }
 
-        public Boolean TinhTK(String Namhoc, String msv)
+        public Boolean TinhTK(String Namhoc,String msv)
         {
-
+     
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
             {
                 con.Open();
@@ -123,9 +123,9 @@ namespace BaiTapLonN6
                     return false;
                 }
             }
-
+      
         }
-        public int DiemHocKy(String HocKy, String NamHoc, String MSV)
+        public int DiemHocKy(String HocKy,String NamHoc,String MSV)
         {
             int Diem;
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
@@ -141,7 +141,7 @@ namespace BaiTapLonN6
             }
             return Diem;
         }
-        public Boolean KTraTrung(String msv, String namhoc, String hocky)
+        public Boolean KTraTrung(String msv,String namhoc,String hocky)  
         {
             Boolean check;
             using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
@@ -194,13 +194,13 @@ namespace BaiTapLonN6
                             {
                                 drl.NhapDiem(int.Parse(txtMSV.Text), cbboxNamHoc.Text, radioButtonHK1.Text, int.Parse(txtTongDiemRL.Text));
                                 MessageBox.Show("Cập Nhật Điểm Thành Công.Chi Tiết : MSV:" + txtMSV.Text + ",Họ Tên:" + txtHoten.Text + ",Lop:" + txtLop.Text + ",Năm Học:" + cbboxNamHoc.Text + "," + radioButtonHK1.Text + ",Điểm:" + txtTongDiemRL.Text);
-                                if (TinhTK(cbboxNamHoc.Text, txtMSV.Text) == true)
+                                if(TinhTK(cbboxNamHoc.Text,txtMSV.Text)==true)
                                 {
                                     int Diem1 = DiemHocKy(radioButtonHK1.Text, cbboxNamHoc.Text, txtMSV.Text);
                                     int Diem2 = DiemHocKy(radioButtonHK2.Text, cbboxNamHoc.Text, txtMSV.Text);
                                     double dtk = ((double)Diem1 + (double)Diem2) / (double)2;
                                     int DiemCaNam = (int)Math.Ceiling(dtk);
-                                    if (KTraTrung(txtMSV.Text, cbboxNamHoc.Text, "Cả Năm") == true)
+                                    if(KTraTrung(txtMSV.Text,cbboxNamHoc.Text,"Cả Năm")==true)
                                     {
                                         drl.NhapDiem(int.Parse(txtMSV.Text), cbboxNamHoc.Text, "Cả Năm", DiemCaNam);
                                     }
@@ -218,7 +218,7 @@ namespace BaiTapLonN6
                             {
                                 drl.NhapDiem(int.Parse(txtMSV.Text), cbboxNamHoc.Text, radioButtonHK2.Text, int.Parse(txtTongDiemRL.Text));
                                 MessageBox.Show("Cập Nhật Điểm Thành Công.Chi Tiết : MSV:" + txtMSV.Text + ",Họ Tên:" + txtHoten.Text + ",Lop:" + txtLop.Text + ",Năm Học:" + cbboxNamHoc.Text + "," + radioButtonHK2.Text + ",Điểm:" + txtTongDiemRL.Text);
-                                if (TinhTK(cbboxNamHoc.Text, txtMSV.Text) == true)
+                                if (TinhTK(cbboxNamHoc.Text,txtMSV.Text) == true)
                                 {
                                     int Diem1 = DiemHocKy(radioButtonHK1.Text, cbboxNamHoc.Text, txtMSV.Text);
                                     int Diem2 = DiemHocKy(radioButtonHK2.Text, cbboxNamHoc.Text, txtMSV.Text);

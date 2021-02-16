@@ -89,7 +89,32 @@ namespace BaiTapLonN6
         private void FrmSinhVienDangKyHoc_Load(object sender, EventArgs e)
         {
 
-            
+            MMH = null;
+            int mk = Makhoa(msvien);
+            if (mk == 0)
+            {
+                MessageBox.Show("Đã Có Lỗi Xảy Ra. Không Xác Định Được Khoa Của Sinh Viên");
+            }
+            else
+            {
+                cbboxMonHoc.DataSource = LoadMonHoc(mk);
+                cbboxMonHoc.DisplayMember = "TenMonHoc";
+                cbboxMonHoc.ValueMember = "MaMonHoc";
+            }
+            dataGridView2.DataSource = KetQUADANGKY(DSCACLOPHOCDANGKY(msvien));
+
+            DataGridViewCheckBoxColumn chk = new DataGridViewCheckBoxColumn();
+            dataGridView1.Columns.Add(chk);
+            chk.HeaderText = "Chọn";
+            chk.Name = "chk";
+
+
+            DataGridViewCheckBoxColumn chk2 = new DataGridViewCheckBoxColumn();
+            dataGridView2.Columns.Add(chk2);
+            chk2.HeaderText = "Chọn";
+            chk2.Name = "chk2";
+
+            dataGridView3.DataSource = TongCong(dataGridView2);
         }
         private List<String> DSCACLOPHOCDANGKY(String msv)
         {
@@ -227,17 +252,47 @@ namespace BaiTapLonN6
         }
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            if (cbboxMonHoc.Text == "")
+            {
+                MessageBox.Show("Empty");
+            }
+            else
+            {
+                dataGridView1.DataSource = LoadLopMo(cbboxMonHoc.SelectedValue.ToString());
+                MMH = cbboxMonHoc.SelectedValue.ToString();
+            }
         }
 
         private void Dangky(String msv,String MLH)
         {
-            
+            using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DangKY_LopHoc";
+                cmd.Parameters.Add(new SqlParameter("@masinhvien", msv));
+                cmd.Parameters.Add(new SqlParameter("@malophoc", MLH));
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
         }
 
         private void HuyDangky(String msv, String MLH)
         {
-           
+            using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "HuyDangKY_LopHoc";
+                cmd.Parameters.Add(new SqlParameter("@masinhvien", msv));
+                cmd.Parameters.Add(new SqlParameter("@malophoc", MLH));
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
         }
 
 
@@ -311,8 +366,79 @@ namespace BaiTapLonN6
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-               
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Ko Có Gì Hết");
+            }
+            else
+            {
+                String LopHoc = null;
+                int check = 0;
+                int siso = 0;
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells["chk"].Value == null)
+                    {
+
+                    }
+                    else
+                    {
+                        bool checkedCell = (bool)dataGridView1.Rows[i].Cells["chk"].Value;
+                        if (checkedCell == true)
+                        {
+                            check++;
+                            LopHoc = dataGridView1.Rows[i].Cells["MaLop"].Value.ToString();
+                            siso = int.Parse(dataGridView1.Rows[i].Cells["SiSo"].Value.ToString());
+                        }
+                    }
+                    if (i == dataGridView1.Rows.Count - 1)
+                    {
+                        if (check > 1)
+                        {
+                            MessageBox.Show("Tôi xin anh. Anh chọn 1 lớp thôi :(");
+                        }
+                        else if (check == 0)
+                        {
+                            MessageBox.Show("Bạn chưa Chọn Lớp.");
+                        }
+                        else
+                        {
+                            if (DaDangKyLopNayHayChua(LopHoc, msvien) == true)
+                            {
+                                if (DaDangKyLopMONHOCNayHayChua(MMH, msvien) == true)
+                                {
+                                    if (Sothangdadangkyvaocailopnay(LopHoc) == siso)
+                                    {
+                                        MessageBox.Show("Lớp này đã đủ sĩ số.. hãy chọn lớp khác");
+                                    }
+                                    else
+                                    {
+                                        if (KIEMTRA_SINHVIENDANGKYHOC(msvien, MMH)==true)
+                                        {
+                                            Dangky(msvien, LopHoc);
+                                            MessageBox.Show("ĐK Thành Công. Bạn Hãy Kiểm Tra Ở Kết Quả Đăng Ký");
+                                            dataGridView2.DataSource = KetQUADANGKY(DSCACLOPHOCDANGKY(msvien));
+                                            dataGridView3.DataSource = TongCong(dataGridView2);
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("Môn Học Này Bạn Ko Học Lại Và Điểm Không Quá Yếu Để Không Phải Học Cải Thiện.");
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Bạn Đã Đăng Ký Môn học Này Rồi");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Bạn Đã Đăng Ký Lớp Này Rồi. Hãy Kiểm Tra Kết Quả");
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private Boolean KIEMTRA_SINHVIENDANGKYHOC(String msv,String mamonhoc)
@@ -347,22 +473,64 @@ namespace BaiTapLonN6
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            if (dataGridView2.Rows.Count == 0)
+            {
+                MessageBox.Show("Ko Có Gì Hết");
+            }
+            else
+            {
+                String LopHoc = null;
+                int check = 0;
+                for (int i = 0; i < dataGridView2.Rows.Count; i++)
+                {
+                    if (dataGridView2.Rows[i].Cells["chk2"].Value == null)
+                    {
+
+                    }
+                    else
+                    {
+                        bool checkedCell = (bool)dataGridView2.Rows[i].Cells["chk2"].Value;
+                        if (checkedCell == true)
+                        {
+                            check++;
+                            LopHoc = dataGridView2.Rows[i].Cells["Malop2"].Value.ToString();
+                        }
+                    }
+                    if (i == dataGridView2.Rows.Count - 1)
+                    {
+                        if (check > 1)
+                        {
+                            MessageBox.Show("Bạn Chỉ Có Thể Hủy Từng Lớp 1 :(");
+                        }
+                        else if (check == 0)
+                        {
+                            MessageBox.Show("Bạn chưa Chọn Lớp.");
+                        }
+                        else
+                        {
+                            HuyDangky(msvien, LopHoc);
+                            MessageBox.Show("Hủy Thành Công. Lớp Trống ra 1 thằng :) hahaa");
+                            dataGridView2.DataSource = KetQUADANGKY(DSCACLOPHOCDANGKY(msvien));
+                            dataGridView3.DataSource = TongCong(dataGridView2);
+                        }
+                    }
+                }
+            }
         }
 
         private void dataGridView3_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-           
+            dataGridView3.ClearSelection();
         }
 
         private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            
+            dataGridView1.ClearSelection();
         }
 
         private void dataGridView2_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-           
+            dataGridView2.ClearSelection();
         }
     }
 }

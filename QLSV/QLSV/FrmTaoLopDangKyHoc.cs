@@ -59,11 +59,11 @@ namespace BaiTapLonN6
             {
                 con.Open();
                 String sql = "Select COUNT(*) from LopHocPhan where MaLopHP=@MaHocPhan";
-                SqlCommand cmd = new SqlCommand(sql, con);
+                SqlCommand cmd = new SqlCommand(sql,con);
                 cmd.Parameters.Add(new SqlParameter("@MaHocPhan", MaHocPhan));
                 int result = (int)cmd.ExecuteScalar();
                 con.Close();
-                if (result == 0)
+                if(result==0)
                 {
                     return true;
                 }
@@ -201,7 +201,7 @@ namespace BaiTapLonN6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtChiTiet.Text == "" || txtMaLopHP.Text == "" || txtNoiHoc.Text == "" || txtTenLopHP.Text == "" || cbboxMonHoc.Text == "" || cbboxGiangVien.Text == "" || txtNamHocHienTai.Text == "")
+            if(txtChiTiet.Text=="" || txtMaLopHP.Text=="" || txtNoiHoc.Text=="" || txtTenLopHP.Text =="" || cbboxMonHoc.Text=="" || cbboxGiangVien.Text=="" || txtNamHocHienTai.Text=="")
             {
                 MessageBox.Show("Hãy điền đầy đủ thông tin lớp học cần mở");
             }
@@ -264,7 +264,7 @@ namespace BaiTapLonN6
             }
         }
 
-
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

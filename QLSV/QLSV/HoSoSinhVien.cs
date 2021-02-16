@@ -21,7 +21,7 @@ namespace BaiTapLonN6
         DataSet ds = new DataSet();
         static int start;
         int page;
-        static String trangthai = "";
+        static String trangthai="";
         static String TimKiem = "";
         static String Quyen = "";
         static String username = "";
@@ -37,7 +37,7 @@ namespace BaiTapLonN6
             result = Regex.Replace(result, "đ", "d");
             return result;
         }
-        public HoSoSinhVien(String quyenhan, String user)
+        public HoSoSinhVien(String quyenhan,String user)
         {
             InitializeComponent();
             start = 0;
@@ -47,7 +47,7 @@ namespace BaiTapLonN6
             Control.CheckForIllegalCrossThreadCalls = false;
         }
         public Boolean click = false;
-
+        
         private void btThemSV_Click(object sender, EventArgs e)
         {
             FrmThemSV frm = new FrmThemSV();
@@ -86,7 +86,7 @@ namespace BaiTapLonN6
             cbboxTinhThanhPho1.DataSource = ds.Tables[0];
             cbboxTinhThanhPho1.DisplayMember = "Tentinh";
             cbboxTinhThanhPho1.ValueMember = "Matinh";
-
+            
 
             KhoaDT khoa = new KhoaDT();
             DataSet ds1 = new DataSet();
@@ -142,7 +142,7 @@ namespace BaiTapLonN6
             getData(DataCollection);
             getData2(DataCollection);
             txtTimKiem.AutoCompleteCustomSource = DataCollection;
-            if (Quyen == "Sinh Viên")
+            if(Quyen=="Sinh Viên")
             {
                 try
                 {
@@ -152,7 +152,7 @@ namespace BaiTapLonN6
                         groupBox2.Visible = false;
                         groupBox4.Visible = false;
                         dataGridView1.Visible = false;
-                        groupBox3.Dock = DockStyle.Fill;
+                        groupBox3.Dock=DockStyle.Fill;
 
                         con.Open();
                         String sql = "select MSV,Hoten,AnhHoSo,Ngaysinh,Gioitinh,Dantoc,SDT,CMND,Email,Hedaotao,Hotenbo,Nghebo,Hotenme,Ngheme,TenTinh,Tenhuyen,Tenxa,Tenkhoa,Tenlop,Tinhtrang,NamnhapHoc from SinhVien, Lop, Khoa, Tinh, Huyen, Xa where SinhVien.Maxa=Xa.Maxa and Xa.Mahuyen=Huyen.Mahuyen and Huyen.Matinh=Tinh.Matinh and SinhVien.Malop=Lop.Malop and Lop.Makhoa=Khoa.Makhoa and SinhVien.MSV=" + username;
@@ -196,11 +196,11 @@ namespace BaiTapLonN6
                         con.Close();
                     }
                 }
-                catch (Exception ex)
+                catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-
+                
                 btLoadSV.Visible = false;
                 btSuaSV.Visible = false;
                 btThemSV.Visible = false;
@@ -267,7 +267,7 @@ namespace BaiTapLonN6
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataSet ds = new DataSet();
             string sql = "SELECT DISTINCT [MSV] FROM [SinhVien]";
-            connection = new SqlConnection(ConnectionString.connectionString);
+            connection = new SqlConnection(ConnectionString.connectionString); 
             try
             {
                 connection.Open();
@@ -385,7 +385,7 @@ namespace BaiTapLonN6
                 cbboxLop1.ValueMember = "Malop";
             }
         }
-
+        
 
 
         private void cbboxLop1_SelectedIndexChanged(object sender, EventArgs e)
@@ -414,7 +414,7 @@ namespace BaiTapLonN6
 
         private void cbboxQuanHuyen1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbboxQuanHuyen1.SelectedIndex != -1)
+            if (cbboxQuanHuyen1.SelectedIndex!=-1)
             {
                 String t;
                 t = cbboxQuanHuyen1.SelectedValue.ToString();
@@ -494,10 +494,9 @@ namespace BaiTapLonN6
                                     {
                                         dataGridView1.DataSource = a.Load(b.Malop(cbboxchonlop.Text));
                                     }
-                                    else if (trangthai == "TK" && TimKiem != "")
+                                    else if (trangthai == "TK" && TimKiem!="")
                                     {
-                                        if (IsNumber(TimKiem) == true)
-                                        {
+                                        if (IsNumber(TimKiem) == true) {
                                             dataGridView1.DataSource = a.Search(int.Parse(txtTimKiem.Text));
                                         }
                                         else
@@ -711,13 +710,13 @@ namespace BaiTapLonN6
                 if (thongbao == DialogResult.OK)
                 {
                     Sinhvien a = new Sinhvien();
-                    a.ExecuteNonQuery("Delete from DiemRL where MSVien=" + txtMSV1.Text);
-                    a.ExecuteNonQuery("Delete from Hosotamtru where MSVien=" + txtMSV1.Text);
+                    a.ExecuteNonQuery("Delete from DiemRL where MSVien="+txtMSV1.Text);
+                    a.ExecuteNonQuery("Delete from Hosotamtru where MSVien="+txtMSV1.Text);
                     try
                     {
                         a.delete(int.Parse(txtMSV1.Text));
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
@@ -734,11 +733,11 @@ namespace BaiTapLonN6
                     txtHoten1.Clear();
                     txtEmail1.Clear();
                     picstudent.Image = null;
-                    if (trangthai == "L")
+                    if(trangthai=="L")
                     {
-                        dataGridView1.DataSource = a.Load(b.Malop(cbboxchonlop.Text));
+                        dataGridView1.DataSource= a.Load(b.Malop(cbboxchonlop.Text));
                     }
-                    else if (trangthai == "TK" && TimKiem != "")
+                    else if(trangthai=="TK" && TimKiem != "")
                     {
                         if (IsNumber(TimKiem) == true)
                         {
@@ -749,7 +748,7 @@ namespace BaiTapLonN6
                             dataGridView1.DataSource = a.SearchHoten(RemoveVietnameseTone(txtTimKiem.Text).Trim());
                         }
                     }
-                    else if (trangthai == "All")
+                    else if(trangthai=="All")
                     {
                         con.Open();
                         ds.Clear();
@@ -837,7 +836,7 @@ namespace BaiTapLonN6
                 if (IsNumber(txtTimKiem.Text) == true)
                 {
                     dataGridView1.DataSource = a.Search(int.Parse(txtTimKiem.Text));
-                    if (dataGridView1.Rows.Count == 0)
+                    if(dataGridView1.Rows.Count==0)
                     {
                         MessageBox.Show("Ko tìm thấy :((");
                     }
@@ -884,9 +883,9 @@ namespace BaiTapLonN6
                 lblPageMAx.Text = "/" + (int)Math.Ceiling(c);
 
                 adapter.Fill(ds, start, 18, "OP");
-
+                
                 dataGridView1.DataSource = ds.Tables[0];
-
+                
                 lblPageNumber.Text = "Trang: 1";
                 btnback.Enabled = false;
                 btnnext.Enabled = true;
@@ -922,7 +921,7 @@ namespace BaiTapLonN6
                     btnfullback.Enabled = false;
                 }
             }
-
+            
         }
         public static int count()
         {
@@ -939,7 +938,7 @@ namespace BaiTapLonN6
         {
             start = start + 18;
             btnback.Enabled = true;
-            if (start > count())
+            if (start>count())
             {
                 btnnext.Enabled = false;
                 btnfullnext.Enabled = false;
@@ -952,7 +951,7 @@ namespace BaiTapLonN6
                 btnfullback.Enabled = true;
                 page = page + 1;
                 lblPageNumber.Text = "Trang:" + page;
-                if (start + 18 >= count())
+                if(start+18 >= count())
                 {
                     btnnext.Enabled = false;
                     btnfullnext.Enabled = false;
@@ -990,7 +989,7 @@ namespace BaiTapLonN6
             btnfullback.Enabled = true;
             btnback.Enabled = true;
             btnnext.Enabled = false;
-            double c = (double)count() / (double)18;
+            double c = (double) count() / (double) 18;
             page = (int)Math.Ceiling(c);
             lblPageNumber.Text = "Trang:" + page;
         }
@@ -1016,12 +1015,12 @@ namespace BaiTapLonN6
 
         private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)

@@ -18,7 +18,7 @@ namespace BaiTapLonN6
 
         private String ten;
         private String quyen;
-        public HoSoTamTru(String tenuser, String quyenhan)
+        public HoSoTamTru(String tenuser,String quyenhan)
         {
             InitializeComponent();
             this.ten = tenuser;
@@ -210,7 +210,7 @@ namespace BaiTapLonN6
             getData2(DataCollection);
             txtTimKiem.AutoCompleteCustomSource = DataCollection;
 
-            if (quyen == "Sinh Viên")
+            if(quyen=="Sinh Viên")
             {
                 groupBox1.Visible = false;
                 groupBox2.Visible = false;
@@ -218,11 +218,11 @@ namespace BaiTapLonN6
                 groupBox4.Visible = false;
                 dataGridView1.Dock = DockStyle.Fill;
                 DataTable data = new DataTable();
-                using (SqlConnection con = new SqlConnection(ConnectionString.connectionString))
+                using(SqlConnection con=new SqlConnection(ConnectionString.connectionString))
                 {
                     con.Open();
-                    String sql = "Select ID,MSV,Hoten,Tenlop,Noitamtru,Ngayden,Ghichu from SinhVien,Lop,Hosotamtru where SinhVien.MSV=Hosotamtru.MSVien and SinhVien.Malop=Lop.Malop and SinhVien.MSV=" + ten;
-                    SqlCommand cmd = new SqlCommand(sql, con);
+                    String sql = "Select ID,MSV,Hoten,Tenlop,Noitamtru,Ngayden,Ghichu from SinhVien,Lop,Hosotamtru where SinhVien.MSV=Hosotamtru.MSVien and SinhVien.Malop=Lop.Malop and SinhVien.MSV="+ten;
+                    SqlCommand cmd = new SqlCommand(sql,con);
                     SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
                     Adapter.Fill(data);
                     con.Close();

@@ -68,7 +68,7 @@ namespace BaiTapLonN6
             MessageBox.Show("Done :)");
             this.Close();
         }
-
+   
         private void button1_Click(object sender, EventArgs e)
         {
             backgroundWorker1.RunWorkerAsync(); //khi runworkerasync được chạy thì nó sẽ gọi method dowork
@@ -81,7 +81,7 @@ namespace BaiTapLonN6
 
         private void FrmLoad_Load(object sender, EventArgs e)
         {
-            button1_Click(sender, e);
+            button1_Click(sender,e);
         }
     }
 }

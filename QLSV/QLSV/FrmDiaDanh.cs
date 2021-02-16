@@ -37,7 +37,7 @@ namespace BaiTapLonN6
 
 
             DataSet dt = new DataSet();
-            dt = dc1.Load();
+            dt=dc1.Load();
             cbboxTTP3.DataSource = dt.Tables[0];
             cbboxTTP3.DisplayMember = "Tentinh";
             cbboxTTP3.ValueMember = "Matinh";
@@ -53,15 +53,15 @@ namespace BaiTapLonN6
                 dataGridView1.AutoResizeColumns();
                 dataGridView1.AutoResizeRows();
                 dataGridView1.DataSource = a.Loaddiachi(cbboxdiadanh.Text);
-                if (cbboxdiadanh.Text == "Xa")
+                if(cbboxdiadanh.Text=="Xa")
                 {
                     trangthai = "Xa";
                 }
-                else if (cbboxdiadanh.Text == "Huyen")
+                else if(cbboxdiadanh.Text == "Huyen")
                 {
                     trangthai = "Huyen";
                 }
-                else if (cbboxdiadanh.Text == "Tinh")
+                else if(cbboxdiadanh.Text=="Tinh")
                 {
                     trangthai = "Tinh";
                 }
@@ -137,7 +137,7 @@ namespace BaiTapLonN6
                         a.Xoatinh(int.Parse(txtmatinh.Text));
                         MessageBox.Show("Xóa Thành Công");
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         MessageBox.Show("Xóa thất bại.Tồn Tại Huyện Thuộc tỉnh thành này.");
                     }
@@ -196,7 +196,7 @@ namespace BaiTapLonN6
                         a.Xoahuyen(int.Parse(txtmaquanhuyen.Text));
                         MessageBox.Show("Xóa Thành Công");
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         MessageBox.Show("Xóa thất bại, Tồn tại xã thuộc huyện này");
                     }
@@ -255,7 +255,7 @@ namespace BaiTapLonN6
                         a.Xoaxa(int.Parse(txtmaphuongxa.Text));
                         MessageBox.Show("Xóa Thành Công");
                     }
-                    catch (Exception ex)
+                    catch(Exception ex)
                     {
                         MessageBox.Show("Xóa thất bại, Tồn tại sinh viên đang ở phường xã này.");
                     }
@@ -288,7 +288,7 @@ namespace BaiTapLonN6
                 }
                 if (trangthai == "Xa")
                 {
-                    Diachi dc = new Diachi();
+                    Diachi dc=new Diachi();
                     DataSet dt = new DataSet();
                     dt = dc.Load();
                     cbboxTTP3.DataSource = dt.Tables[0];
@@ -342,7 +342,7 @@ namespace BaiTapLonN6
             else
             {
                 Diachi a = new Diachi();
-                cbboxTTP3.Text = a.TenTinh(int.Parse(t));
+                cbboxTTP3.Text = a.TenTinh(int.Parse(t)); 
             }
         }
 

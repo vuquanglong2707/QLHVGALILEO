@@ -26,10 +26,10 @@ namespace BaiTapLonN6
             }
             else
             {
-                String diachi = "" + txtNoitamtru.Text + "," + cbboxPhuongxa.Text + "," + cbboxQuanHuyen.Text + "," + cbboxTinhThanhPho.Text + "";
+                String diachi = "" +txtNoitamtru.Text+","+cbboxPhuongxa.Text+","+cbboxQuanHuyen.Text+","+cbboxTinhThanhPho.Text+"";
                 String diachireal = diachi.Trim();
                 Sinhvien a = new Sinhvien();
-                a.ExecuteNonQuery("insert into Hosotamtru values(" + int.Parse(txtMSV.Text) + ",N'" + diachireal + "','" + dateTimePicker1.Value.ToString() + "',N'" + txtGhichu.Text + "')");
+                a.ExecuteNonQuery("insert into Hosotamtru values(" + int.Parse(txtMSV.Text) +  ",N'" + diachireal + "','" + dateTimePicker1.Value.ToString() + "',N'" + txtGhichu.Text + "')");
                 MessageBox.Show("Thêm Dữ Liệu Thành Công");
                 txtGhichu.Clear();
                 txtNoitamtru.Clear();
@@ -56,7 +56,7 @@ namespace BaiTapLonN6
             cbboxlop.ValueMember = "Malop";
 
 
-
+            
             cbboxchonkhoa.DataSource = ds1.Tables[0];
             cbboxchonkhoa.DisplayMember = "Tenkhoa";
             cbboxchonkhoa.ValueMember = "Makhoa";
@@ -114,7 +114,7 @@ namespace BaiTapLonN6
             Sinhvien a = new Sinhvien();
             Lop b = new Lop();
             t = cbboxHoten.SelectedValue.ToString();
-            txtMSV.Text = a.MSV(t, b.Malop(cbboxlop.Text));
+            txtMSV.Text = a.MSV(t,b.Malop(cbboxlop.Text));
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -155,7 +155,7 @@ namespace BaiTapLonN6
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (click == true)
+            if(click==true)
             {
                 txtMSV.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 cbboxHoten.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();

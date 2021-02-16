@@ -190,13 +190,13 @@ namespace BaiTapLonN6
         }
         private void btnXuatExel_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count == 0)
+            if (dataGridView1.Rows.Count==0)
             {
                 MessageBox.Show("Ko co gi de xuat");
             }
             else
             {
-
+                
                 if (trangthai == "Khoa")
                 {
                     if (duongdan == null)
