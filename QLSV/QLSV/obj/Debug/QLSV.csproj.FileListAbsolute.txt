@@ -200,3 +200,15 @@ C:\Users\84944\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThongKe.resou
 C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLTaiKhoan.resources
 C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThongKe.resources
 C:\Users\admin\Desktop\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmTaoLopDangKyHoc.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmDiaDanh.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmGiangVienNhapDiemMonHoc.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmLoad.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmQLTaiKhoan.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmREGISTER.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmSinhVienDangKyHoc.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmTaoLopDangKyHoc.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.FrmThemSV.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoSinhVien.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.HoSoTamTru.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThemTamTru.resources
+D:\quan tri du an\QLHVGALILEO\QLSV\QLSV\obj\Debug\BaiTapLonN6.ThongKe.resources
