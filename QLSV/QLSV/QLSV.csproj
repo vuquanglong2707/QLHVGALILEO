@@ -60,7 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="app.cs" />
     <Compile Include="ConnectionString.cs" />
+    <Compile Include="Diachi.cs" />
+    <Compile Include="Diem.cs" />
+    <Compile Include="DiemMonHoc.cs" />
+    <Compile Include="DiemRL.cs" />
+    <Compile Include="DiemTBTL.cs" />
     <Compile Include="FrmDiaDanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,7 @@
     <Compile Include="FrmXetHocBong.Designer.cs">
       <DependentUpon>FrmXetHocBong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiangVien.cs" />
     <Compile Include="HoSoSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +206,10 @@
     <Compile Include="Khoa.Designer.cs">
       <DependentUpon>Khoa.cs</DependentUpon>
     </Compile>
+    <Compile Include="KhoaDT.cs" />
+    <Compile Include="LocSinhVien.cs" />
+    <Compile Include="Lop.cs" />
+    <Compile Include="MonHoc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -206,6 +217,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Sinhvien.cs" />
     <Compile Include="ThemeColor.cs" />
     <Compile Include="ThemTamTru.cs">
       <SubType>Form</SubType>
@@ -219,6 +231,7 @@
     <Compile Include="ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemDiemSV.cs" />
     <EmbeddedResource Include="FrmDiaDanh.resx">
       <DependentUpon>FrmDiaDanh.cs</DependentUpon>
     </EmbeddedResource>
